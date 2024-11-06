@@ -1,0 +1,35 @@
+.project-card {
+  border: 1px solid #ccc;
+  background-color: black;
+  border-radius: 8px;
+  padding: 12px; /* Slightly increased padding for breathing room */
+  margin: 20px auto; /* Center-align cards in their grid column */
+  text-align: center;
+  width: 90%; /* Responsive width to fit smaller screens */
+  max-width: 700px; /* Maximum width cap */
+  box-shadow: white(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px; /* Space between image and text */
+}
+
+.language-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap items to handle overflow */
+  gap: 8px; /* Consistent gap instead of margin-top */
+  margin-top: 12px;
+}
+
+.language-item {
+  padding: 4px 8px; /* Add padding for a button-like look */
+  border: 1px solid #ccc; /* Border for each item */
+  border-radius: 4px;
+  margin: 5px; /* Smaller margin for more compact layout */
+  font-weight: bold;
+  background-color: #f5f5f5; /* Light background for contrast */
+}

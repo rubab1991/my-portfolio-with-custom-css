@@ -1,0 +1,119 @@
+.about {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Video */
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: -40px;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content Overlay */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.about {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Video */
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content Overlay */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  .content {
+    padding: 150px 40px;
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .content {
+    padding: 200px 80px;
+    font-size: 1.4rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .content {
+    padding: 40px 10px;
+    font-size: 0.9rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+}
+/* Remove default margins between sections */
+ .about {
+  margin: 0;
+  padding: 0;
+}
+.about {
+  margin-top: 0; /* Removes any extra space at the top */
+  margin-top: -20px; /* Adjust as needed */
+}

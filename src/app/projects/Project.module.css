@@ -1,0 +1,67 @@
+/* Background Video */
+.backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Video stays behind content */
+    margin-top: -20px;
+    
+    
+}
+
+/* Project Card */
+.project-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Blur effect over video */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent for readability */
+    z-index: 1; /* Cards above video */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Language Item */
+.language-item {
+    margin: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Responsive Design for Project Cards */
+@media (max-width: 768px) {
+    .project-card {
+        margin: 15px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .language-item {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        margin: 10px;
+        padding: 10px;
+    }
+    .language-item {
+        font-size: 0.75rem;
+    }
+}
