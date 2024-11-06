@@ -1,9 +1,9 @@
 // src/app/projects/ProjectCard.tsx
 import React from 'react';
+import Image from 'next/image'; // Import Image from Next.js
 import './ProjectCard.css'; // Adjust if necessary
 import styles from './Project.module.css';
 
-// Define an interface for the props
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -11,7 +11,6 @@ interface ProjectCardProps {
   image: string;
 }
 
-// Define language colors for different languages
 const languageColors: Record<string, string> = {
   "Next.js": "#E34F26",
   "Tailwind CSS": "#38BDF8",
@@ -22,8 +21,14 @@ const languageColors: Record<string, string> = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, languages, image }) => {
   return (
-    <div className={`${styles.projectCard} project-card`} >
-      <img src={image} alt={`Image of ${title}`} className="project-image" />
+    <div className={`${styles.projectCard} project-card`}>
+      <Image 
+        src={image} 
+        alt={`Image of ${title}`} 
+        width={400} 
+        height={300} 
+        className="project-image" 
+      />
       <h3 className="text-xl font-semibold mt-4">{title}</h3>
       <p className="mt-2">{description}</p>
       <div className="language-list">
